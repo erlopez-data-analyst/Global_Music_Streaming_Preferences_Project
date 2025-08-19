@@ -1,0 +1,149 @@
+Problem Statement
+
+To analyze global music streaming preferences and listening behaviors across demographics, countries, and platforms in order to identify key trends, patterns, and factors that influence listener engagement. Specifically, to explore which music genres dominate in different countries, how subscription types impact engagement, and what factors drive higher repeat rates and streaming times.
+
+--------------------------------------------------------------------------------------
+1. Genre Popularity by Country
+
+Question: What are the most popular genres in each country?
+Analysis: Frequency counts, bar plots, crosstabulations, heatmaps.
+
+Findings:
+
+Genre popularity varies widely across countries. For example, EDM dominates in Canada and Germany, Reggae is most popular in India and the UK, and Jazz leads in Japan and France.
+
+Interestingly, in the USA, Reggae and EDM surfaced as top genres despite charts typically favoring Hip-Hop, R&B, and Pop.
+
+Heatmaps showed EDM having ~15% overall share across countries.
+
+Chi-square and p-value tests indicated no statistically significant difference between country and genre preferences. This suggests observed variations may be due to chance.
+
+--------------------------------------------------------------------------------------
+2. Platform Preference Trends
+
+Question: Which streaming platforms are most used in different age groups or countries?
+Analysis: Grouped bar plots, pie charts, clustering by usage.
+
+Findings:
+
+Platform preferences differ by region:
+
+Australia: Tidal most used; YouTube least used.
+
+Brazil: Amazon & YouTube most used; Apple Music least used.
+
+Canada: YouTube most used; Apple Music least used.
+
+France: Tidal most used; Amazon least used.
+
+Germany: Tidal & Deezer most used; Spotify least used.
+
+India: Deezer most used; Apple Music least used.
+
+Japan: Apple Music most used; Tidal least used.
+
+UK: Amazon most used; Spotify least used.
+
+USA: Amazon most used; YouTube least used.
+
+Overall: Amazon leads, Apple Music least preferred.
+
+Age group trends: <18 → Tidal; 18–25 → Amazon; 26–35 → Deezer; 36–50 → Amazon; 50+ → Tidal.
+
+Chi-square tests found no significant relationship between platform preference and age/country, meaning usage patterns are broadly distributed.
+
+--------------------------------------------------------------------------------------
+3. Listening Time Patterns
+
+Question: Do people listen more in the morning, afternoon, or night? How does it vary by country or age group?
+Analysis: Distribution plots, stacked bar charts.
+
+Findings:
+
+Overall, nighttime is the most common listening period, followed closely by afternoon, then morning.
+
+Country differences:
+
+UK & USA: peak listening at night.
+
+Brazil & France: also lean toward night listening.
+
+Japan & South Korea: morning listeners.
+
+India & Australia: prefer afternoon listening.
+
+Chi-square tests showed no significant differences by age or country, suggesting time-of-day preferences are somewhat universal.
+
+--------------------------------------------------------------------------------------
+4. Engagement Analysis
+
+Question: Does subscription type affect engagement (minutes per day, discover weekly %, repeat rate %)?
+Analysis: Boxplots, ANOVA, t-tests.
+
+Findings:
+
+Engagement metrics (minutes per day, repeat rate, discover weekly %) did not differ significantly between free and premium subscribers.
+
+Qualitative observation: While premium eliminates ads, many listeners appear comfortable with free versions despite disruptions. This reflects broader subscription fatigue across digital services.
+
+--------------------------------------------------------------------------------------
+5. Artist Popularity
+
+Question: Who are the most played artists across countries, and does this align with top genres?
+Analysis: Word clouds, frequency plots, ranking tables.
+
+Findings:
+
+Top 5 artists overall: Bad Bunny, Adele, Post Malone, Dua Lipa, Ed Sheeran.
+
+Country-level preferences:
+
+Australia → Post Malone
+
+Brazil → Dua Lipa
+
+India → Drake
+
+Canada, USA, UK → Bad Bunny
+
+France → BTS
+
+Japan → Billie Eilish
+
+Artist preferences loosely align with genre trends (e.g., Bad Bunny with Reggae/EDM in USA & UK).
+
+However, chi-square results showed no significant difference in artist popularity by country, suggesting that favorite artists are individualized and less tied to culture compared to genres/platforms.
+
+--------------------------------------------------------------------------------------
+6. Correlation Between Behaviors
+
+Question: Are users who spend more time streaming also more likely to like songs or repeat them?
+Analysis: Correlation matrix, scatterplots, regression.
+
+Findings:
+
+Correlation coefficients between minutes streamed, songs liked, and repeat rate were all near zero.
+
+Regression analysis confirmed weak predictive power (low R² values).
+
+Conclusion: Streaming time alone is not a reliable predictor of other engagement metrics. Other factors (age, platform, genre, culture) likely explain variation better.
+
+--------------------------------------------------------------------------------------
+7. Segmentation of Users
+
+Question: Can we segment listeners into groups (e.g., casual, engaged, heavy users)?
+Analysis: K-means clustering, PCA visualization, segment profiling.
+
+Findings:
+
+Clustering produced three user segments:
+
+Cluster 0 – Engaged/Heavy Listeners: High minutes, high likes, high discovery use.
+
+Cluster 1 – Casual Listeners: Low minutes, lower engagement, fewer unique behaviors.
+
+Cluster 2 – Repeat-Oriented Listeners: Moderate minutes, high repeat rates, preference for familiar tracks.
+
+PCA visualization showed some overlap between clusters, but distinct patterns emerged.
+
+This suggests that while users share blended traits, meaningful behavioral profiles can still be identified for marketing or personalization strategies.
